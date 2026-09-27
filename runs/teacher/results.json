@@ -1,0 +1,42 @@
+{
+  "method": "teacher",
+  "seed": 0,
+  "best_val_f1": 1.0,
+  "test": {
+    "acc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "acc_day": 1.0,
+    "acc_night": 1.0
+  },
+  "params_M": 27.520892,
+  "latency_ms_bs1": 11.148180961608887,
+  "args": {
+    "method": "teacher",
+    "csv": "data/kaist_patches/pairs.csv",
+    "out": "runs/teacher",
+    "teacher_arch": "swin_tiny_patch4_window7_224",
+    "student_arch": "mobilenetv3_large_100",
+    "teacher_ckpt": null,
+    "img_size": 224,
+    "epochs": 1,
+    "bs": 32,
+    "lr": 0.0001,
+    "wd": 0.05,
+    "T": 4.0,
+    "alpha": 1.0,
+    "beta": 1.0,
+    "gamma": 0.5,
+    "lam_gate": 2.0,
+    "rho": 0.7,
+    "conf_thresh": 0.0,
+    "dim": 256,
+    "workers": 0,
+    "device": "auto",
+    "seed": 0,
+    "limit": 20,
+    "no_pretrained": false,
+    "no_amp": false
+  }
+}
